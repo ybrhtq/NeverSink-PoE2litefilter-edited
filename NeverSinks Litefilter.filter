@@ -498,17 +498,19 @@ SetFontSize 35
 # Random Rares
 #--------------------------
 
-## Uncomment this rule to hide low level rares in high level zones
-
-# Hide
-# Rarity Rare
-# DropLevel < 50
-# AreaLevel > 72
-# SetFontSize 35
-
 Show
 Rarity Rare
+DropLevel >= 50
+Class "Body Armours" "Helmets" "Boots" "Foci"
+BaseEnergyShield > 1
+BaseArmour < 1
+BaseEvasion < 1
 SetFontSize 35
+
+Hide
+Rarity Rare
+SetFontSize 35
+
 
 #--------------------------
 # Hide Rules (only high level), super light edition
