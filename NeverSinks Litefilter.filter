@@ -402,8 +402,30 @@ SetBorderColor 233 206 75
 PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
+Show
+Class "Body Armours" "Helmets" "Boots" "Foci"
+Rarity Rare
+DropLevel >= 65
+BaseEnergyShield > 1
+BaseArmour < 1
+BaseEvasion < 1
+SetFontSize 40
+SetTextColor 233 206 75
+SetBorderColor 233 206 75
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+Show
+Class "Wands" "Staves"
+Rarity Rare
+SetFontSize 40
+SetTextColor 233 206 75
+SetBorderColor 233 206 75
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
 #--------------------------
-# Rings, Amulets, Belts
+# Rings, Amulets, Belts, good bases
 #--------------------------
 
 Show
@@ -414,6 +436,34 @@ SetFontSize 40
 Show
 Class "Rings" "Amulets" "Belts"
 Rarity Magic
+SetFontSize 40
+
+Show
+Rarity Normal
+DropLevel >= 70
+Class "Body Armours" "Helmets" "Boots" "Foci"
+BaseEnergyShield > 1
+BaseArmour < 1
+BaseEvasion < 1
+SetFontSize 40
+
+Show
+Rarity Magic
+DropLevel >= 70
+Class "Body Armours" "Helmets" "Boots" "Foci"
+BaseEnergyShield > 1
+BaseArmour < 1
+BaseEvasion < 1
+SetFontSize 40
+
+Show
+Rarity Normal
+Class "Wands"
+SetFontSize 40
+
+Show
+Rarity Magic
+Class "Wands" "Staves"
 SetFontSize 40
 
 #--------------------------
