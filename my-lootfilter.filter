@@ -533,5 +533,5 @@ SetFontSize 35
 Hide
 Quality = 0
 AreaLevel >= 70
-Rarity <= Magic
+Rarity < Magic
 Class "Flasks"
