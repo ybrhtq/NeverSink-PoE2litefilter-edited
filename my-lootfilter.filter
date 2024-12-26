@@ -399,6 +399,15 @@ Class "Quarterstaves"
 SetFontSize 35
 
 #--------------------------
+# iLvl 81 decorator
+#--------------------------
+
+Show
+ItemLevel >= 81
+SetBorderColor 120 0 0 240
+Continue
+
+#--------------------------
 # Value Rares
 #--------------------------
 
@@ -407,7 +416,7 @@ Class "Rings" "Amulets" "Belts"
 Rarity Rare
 SetFontSize 40
 SetTextColor 233 206 75
-SetBorderColor 233 206 75
+# SetBorderColor 233 206 75
 PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
@@ -420,7 +429,7 @@ BaseArmour < 1
 BaseEvasion < 1
 SetFontSize 40
 SetTextColor 233 206 75
-SetBorderColor 233 206 75
+# SetBorderColor 233 206 75
 PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
@@ -429,7 +438,7 @@ Class "Wands" "Staves"
 Rarity Rare
 SetFontSize 40
 SetTextColor 233 206 75
-SetBorderColor 233 206 75
+# SetBorderColor 233 206 75
 PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
