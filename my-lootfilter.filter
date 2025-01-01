@@ -390,98 +390,158 @@ MinimapIcon 1 White Square
 SetFontSize 40
 
 #--------------------------
-# Hide quarterstaves
+# Hide specific unwanted bases
 #--------------------------
 
 Hide
-Rarity <= Rare
-Class "Quarterstaves"
-SetFontSize 35
+BaseType "Iron Ring" "Emerald Ring" "Unset Ring" "Crimson Amulet"
 
 #--------------------------
-# iLvl 81 decorator
+# top ilvl rares
 #--------------------------
 
 Show
+Class "Rings" "Amulets" "Belts"
+Rarity Rare
+ItemLevel >= 82
+SetFontSize 45
+SetTextColor 233 157 75
+SetBorderColor 233 157 75
+SetBackgroundColor 0 0 0 255
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+Show
+Class "Body Armours" "Helmets" "Boots" "Foci" "Gloves"
+Rarity Rare
+ItemLevel >= 82
+DropLevel >= 65
+BaseEnergyShield > 1
+BaseArmour < 1
+BaseEvasion < 1
+SetFontSize 45
+SetTextColor 233 157 75
+SetBorderColor 233 157 75
+SetBackgroundColor 0 0 0 255
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+Show
+Class "Shields"
+ItemLevel >= 82
+Rarity Rare
+BaseEnergyShield > 1
+SetFontSize 45
+SetTextColor 233 157 75
+SetBorderColor 233 157 75
+SetBackgroundColor 0 0 0 255
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+Show
+BaseType "Siphoning wand" "Attuned wand"
 ItemLevel >= 81
-SetBorderColor 120 0 0 240
-Continue
+Rarity Rare
+SetFontSize 45
+SetTextColor 233 157 75
+SetBorderColor 233 157 75
+SetBackgroundColor 0 0 0 255
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
 
 #--------------------------
-# Value Rares
+# other rares
 #--------------------------
 
 Show
 Class "Rings" "Amulets" "Belts"
 Rarity Rare
 SetFontSize 40
-SetTextColor 233 206 75
-# SetBorderColor 233 206 75
-PlayEffect Yellow
-MinimapIcon 1 Yellow Diamond
 
 Show
-Class "Body Armours" "Helmets" "Boots" "Foci"
+Class "Body Armours" "Helmets" "Boots" "Foci" "Gloves"
 Rarity Rare
 DropLevel >= 65
 BaseEnergyShield > 1
 BaseArmour < 1
 BaseEvasion < 1
-SetFontSize 40
-SetTextColor 233 206 75
-# SetBorderColor 233 206 75
-PlayEffect Yellow
-MinimapIcon 1 Yellow Diamond
+SetFontSize 30
 
 Show
-Class "Wands" "Staves"
+Class "Shields"
+Rarity Rare
+BaseEnergyShield > 1
+SetFontSize 30
+
+Show
+BaseType "Siphoning wand" "Attuned wand"
 Rarity Rare
 SetFontSize 40
-SetTextColor 233 206 75
-# SetBorderColor 233 206 75
-PlayEffect Yellow
-MinimapIcon 1 Yellow Diamond
 
 #--------------------------
-# Rings, Amulets, Belts, good bases
+# top ilvl Rings, Amulets, Belts, good bases
 #--------------------------
 
 Show
-Rarity Normal
 Class "Rings" "Amulets" "Belts"
+ItemLevel >= 82
+Rarity <= Magic
+SetFontSize 45
+SetBorderColor 5 81 204
+
+Show
+Class "Body Armours" "Helmets" "Boots" "Foci"
+ItemLevel >= 82
+Rarity <= Magic
+DropLevel >= 70
+BaseEnergyShield > 1
+BaseArmour < 1
+BaseEvasion < 1
 SetFontSize 40
+SetBorderColor 5 81 204
+
+Show
+Class "Shields"
+ItemLevel >= 82
+Rarity <= Magic
+BaseEnergyShield > 1
+SetFontSize 40
+SetBorderColor 5 81 204
+
+Show
+BaseType "Siphoning wand" "Attuned wand"
+ItemLevel >= 81
+Rarity <= Magic
+SetFontSize 45
+SetBorderColor 5 81 204
+
+#--------------------------
+# other Rings, Amulets, Belts, good bases
+#--------------------------
 
 Show
 Class "Rings" "Amulets" "Belts"
-Rarity Magic
+Rarity <= Magic
 SetFontSize 40
 
 Show
-Rarity Normal
+Rarity <= Magic
 DropLevel >= 70
 Class "Body Armours" "Helmets" "Boots" "Foci"
 BaseEnergyShield > 1
 BaseArmour < 1
 BaseEvasion < 1
-SetFontSize 40
+SetFontSize 30
 
 Show
-Rarity Magic
-DropLevel >= 70
-Class "Body Armours" "Helmets" "Boots" "Foci"
+Class "Shields"
+Rarity <= Magic
 BaseEnergyShield > 1
-BaseArmour < 1
-BaseEvasion < 1
-SetFontSize 40
+SetFontSize 30
 
 Show
-Rarity Normal
-Class "Wands"
-SetFontSize 40
-
-Show
-Rarity Magic
-Class "Wands" "Staves"
+Rarity <= Magic
+BaseType "Siphoning wand" "Attuned wand"
 SetFontSize 40
 
 #--------------------------
@@ -513,24 +573,6 @@ SetBorderColor 0 0 200
 SetFontSize 35
 
 #--------------------------
-# Random Rares
-#--------------------------
-
-Show
-Rarity Rare
-DropLevel >= 50
-Class "Body Armours" "Helmets" "Boots" "Foci"
-BaseEnergyShield > 1
-BaseArmour < 1
-BaseEvasion < 1
-SetFontSize 35
-
-Hide
-Rarity Rare
-SetFontSize 35
-
-
-#--------------------------
 # Hide rules
 #--------------------------
 
@@ -542,5 +584,4 @@ SetFontSize 35
 Hide
 Quality = 0
 AreaLevel >= 70
-Rarity < Magic
 Class "Flasks"
